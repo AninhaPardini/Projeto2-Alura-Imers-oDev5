@@ -1,0 +1,429 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Computador */
+body {
+    background-image: url(/gif-background.gif);
+    max-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 200vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 3% auto;
+}
+
+#title {
+    width: 600px;
+    display: block;
+}
+
+p {
+    display: block;
+    flex-direction: column;
+    margin: 1%;
+    font-family: 'Courier New', Courier, monospace;
+    width: 90vh;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#mario {
+    width: 100px;
+    position: absolute;
+    top: 18px;
+    left: 55px;
+    display: inline-block;
+    transform: translate(121%, 10%);
+    height: 10%;
+}
+
+.conversor {
+    text-align: center;
+    align-items: center;
+    margin: 10vh auto auto;
+}
+
+.coin {
+    width: 55vh;
+    padding: 10px 20px;
+    margin: auto;
+    border-radius: 5px;
+    background-image: url(Tijolos-background.png);
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 5px 5px black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+label {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+input {
+    display: flexbox;
+    text-align: center;
+    margin: 2% auto;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 15px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+/*BUTTON*/
+:root {
+    --color-primary-button: rgb(252, 245, 169);
+    --color-secundary-button: rgb(255, 234, 0);
+    --color-thrid-button: rgb(255, 157, 0);
+
+}
+
+button {
+    margin: 5vh auto;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background .3s;
+    color: rgb(16, 12, 31);
+    font-weight: bold;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 40px;
+}
+
+button:hover {
+    background-color: var(--color-secundary-button);
+}
+
+button:active {
+    background-color: var(--color-thrid-button);
+}
+
+
+
+#result {
+    width: 55vh;
+    padding: 10px 20px;
+    margin: 2% auto;
+    height: 15vh;
+    border-radius: 5px;
+    background-image: url(Tijolos-background.png);
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 5px 5px black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+
+
+/* Celular */
+@media only screen and (max-width: 480px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 8vh auto;
+    }
+    
+    #title {
+        width: 90%;
+        margin: auto;
+        
+        
+    }
+
+    p {
+        width: 100%;
+        height: 20%;
+        font-weight: bold;
+        font-size: 12px;
+        margin: 1%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 13px;
+    }
+
+    #mario {
+        width: 20%;
+        max-height: 8vh;
+        position: absolute;
+        top: 8%;
+        left: 1%;
+        transform: translate(0.5%, 8%);
+    
+    }
+
+    .conversor {
+        text-align: center;
+        align-items: center;
+        margin: 20vh auto auto;
+    }
+
+    .coin {
+        width: 40vh;
+        height: 9vh;
+        padding: 10px 20px;
+        margin: auto;
+        background-image: url(Tijolos-background.png);
+        background-size: 600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 5px 5px 5px black;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    label { 
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 18px;
+        
+    }
+
+    input {
+        display: flexbox;
+        text-align: center;
+        margin: 2% auto;
+        border: none;
+        border-radius: 3px;
+        background-color: rgb(255, 255, 255);
+        width: 100px;
+        height: 15px;
+    }
+
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+        appearance: textfield;
+
+    }
+
+    /*BUTTON*/
+    :root {
+        --color-primary-button: rgb(252, 245, 169);
+        --color-secundary-button: rgb(255, 234, 0);
+        --color-thrid-button: rgb(255, 157, 0);
+    
+    }
+    
+    button {
+        margin: 10vh auto;
+        font-family: 'Courier New', Courier, monospace;
+        transition: background .3s;
+        color: rgb(16, 12, 31);
+        font-weight: bold;
+        background: none;
+        border: none;
+        border-radius: 10px;
+        justify-content: center;
+    }
+    
+    button:hover {
+        background-color: var(--color-secundary-button);
+    }
+    
+    button:active {
+        background-color: var(--color-thrid-button);
+    }
+    
+
+
+    #result {
+        width: 40vh;
+        padding: 10px 20px;
+        margin: 4% auto;
+        height: 15vh;
+        border-radius: 5px;
+        background-image: url(Tijolos-background.png);
+        background-size: 600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 5px 5px 5px black;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        color: white;
+        justify-content: center;
+        font-size: 100x;
+        font-weight: bold;
+        font-size: 25px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+}
+
