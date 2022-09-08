@@ -279,6 +279,9 @@ button:active {
     align-items: center;
     color: white;
     justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
